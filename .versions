@@ -5,7 +5,7 @@ ecmascript@0.8.2
 ecmascript-runtime@0.4.1
 ecmascript-runtime-client@0.4.3
 ecmascript-runtime-server@0.4.1
-fchandonnet:materialize@0.1.0
+fchandonnet:materialize@0.1.1
 fourseven:scss@4.5.4
 jquery@1.11.10
 meteor@1.7.1

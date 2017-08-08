@@ -3,7 +3,7 @@
 Package.describe({
   name: 'fchandonnet:materialize',  // http://atmospherejs.com/fchandonnet/materialize
   summary: 'Materialize (forked): A modern responsive front-end framework based on Material Design',
-  version: '0.1.0',
+  version: '0.1.1',
   git: 'https://github.com/chandonnet/materialize.git'
 });
 
