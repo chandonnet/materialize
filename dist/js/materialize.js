@@ -2206,7 +2206,11 @@ if (jQuery) {
    */
   Modal._count = 0;
 
-  window.Materialize.Modal = Modal;
+  if (window.Package) {
+    Materialize.Modal = Modal;
+  } else {
+    window.Materialize.Modal = Modal;
+  }
 
   $.fn.modal = function (methodOrOptions) {
     // Call plugin method if valid method name is passed in
@@ -3697,11 +3701,18 @@ if (jQuery) {
    * @type {Toast}
    */
   Toast._draggedToast = null;
-
-  window.Materialize.Toast = Toast;
-  window.Materialize.toast = function (message, displayLength, className, completeCallback) {
-    return new Toast(message, displayLength, className, completeCallback);
-  };
+  
+  if (window.Package) {
+    Materialize.Toast = Toast;
+    Materialize.toast = function (message, displayLength, className, completeCallback) {
+      return new Toast(message, displayLength, className, completeCallback);
+    };
+  } else {
+    window.Materialize.Toast = Toast;
+    window.Materialize.toast = function (message, displayLength, className, completeCallback) {
+      return new Toast(message, displayLength, className, completeCallback);
+    };
+  }
 })(jQuery);
 ;(function ($) {
 
